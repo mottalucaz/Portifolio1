@@ -10,6 +10,11 @@ body {
   color: white;
 }
 
+.secao {
+  padding: 100px 0;
+  padding-left: 50px;
+}
+
 header {
   display: flex;
   gap: 40px;
@@ -52,4 +57,135 @@ ul {
   color: white;
   font-weight: bold;
   border-radius: 5px;
+}
+
+.titulo-secao {
+  font-size: 42px;
+  margin-bottom: 60px;
+  position: relative;
+}
+.titulo-secao::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 100px;
+  height: 4px;
+  background-color: #4d7cfe;
+}
+.grade-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1rf));
+}
+.img-projeto {
+  width: 25%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.card-projetos {
+  background-color: black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.info-projeto {
+  padding: 20px;
+}
+.info-projeto h3 {
+  margin-bottom: 10px;
+}
+.info-projeto p {
+  color: #bbb;
+  margin-bottom: 15px;
+}
+.info-projeto a {
+  color: #4d7cfe;
+  font-weight: 500;
+}
+
+.Sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  max-width: 1200px;
+}
+.img-sobre {
+  height: 500px;
+  background-color: black;
+  border-radius: 2%;
+}
+
+.conteudo-sobre h2 {
+  margin-bottom: 30px;
+}
+.conteudo-sobre p {
+  margin-bottom: 20px;
+  color: #bbb;
+}
+
+.Habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.tag-habilidades {
+  background-color: rgba(77, 124, 254, 0.2);
+  color: #4d7cfe;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.botoes-contato {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.botao-contato {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-weight: 500;
+  min-width: 100px;
+  text-decoration: none;
+  color: white;
+}
+.whatsapp {
+  background-color: #25d366;
+}
+.Email {
+  background-color: #ea4335;
+}
+.linkedin {
+  background-color: #0077b5;
+}
+.github {
+  background-color: #333;
+}
+footer {
+  padding: 20px 5%;
+  text-align: center;
+  border-top: 1px solid #222;
+}
+.efeito-cursor {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.efeito-cursor:hover {
+  transform: translatey(-5px);
+}
+
+ul a:hover {
+  color: #c7c7c7;
 }
